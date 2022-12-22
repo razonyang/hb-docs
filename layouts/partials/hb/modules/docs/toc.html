@@ -1,0 +1,5 @@
+{{- if partial "base/functions/has-toc" . }}
+  <div class="h6">On this page</div>
+  <hr />
+  {{ .TableOfContents }}
+{{- end }}

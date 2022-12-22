@@ -1,0 +1,49 @@
+{{- $tree := partialCached "hb/modules/docs/functions/tree" . .FirstSection }}
+<div
+  class="hb-docs-nav offcanvas-xxl offcanvas-start"
+  aria-labelledby="#hb-docs-nav-label">
+  <div class="offcanvas-header border-bottom">
+    <h5 class="offcanvas-title" id="hb-docs-nav-label">Browse docs</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+      data-bs-target=".hb-docs-nav"></button>
+  </div>
+  <div class="offcanvas-body flex-column text-body-secondary">
+    <ul class="hb-docs-nav-links list-unstyled">
+      {{ template "walk-docs-tree" (dict "Tree" $tree "Page" .) }}
+    </ul>
+  </div>
+</div>
+
+{{- define "walk-docs-tree" }}
+  {{- $page := .Page }}
+  {{- range .Tree }}
+    {{- $node := . }}
+    {{- $active := eq $page.RelPermalink .Page.RelPermalink }}
+    {{- if $node.Page.IsSection }}
+      <li class="hb-docs-nav-links-group">
+        <a
+          class="hb-docs-nav-heading d-flex align-items-center rounded{{ cond $active ` active` `` }}"
+          href="{{ $node.Page.RelPermalink }}">
+          {{- partial "hb/modules/docs/nav-menu" $node.Page -}}
+        </a>
+        {{- with .Children }}
+          <ul class="list-unstyled fw-normal small">
+            {{- template "walk-docs-tree" (dict "Tree" . "Page" $page) }}
+          </ul>
+        {{- end }}
+      </li>
+    {{- else }}
+      <li class="hb-docs-nav-links-span-all">
+        <a
+          class="hb-docs-nav-link d-flex align-items-center rounded{{ cond $active ` active` `` }}"
+          href="{{ .Page.RelPermalink }}">
+          {{- partial "hb/modules/docs/nav-menu" $node.Page -}}
+        </a>
+      </li>
+    {{- end }}
+  {{- end }}
+{{- end }}

@@ -1,0 +1,9 @@
+.hb-docs-nav,
+.hb-docs-toc {
+    @include media-breakpoint-up(xxl) {
+        position: sticky;
+        top: 86px;
+        height: calc(100vh - 86px);
+        overflow-y: auto;
+    }
+}

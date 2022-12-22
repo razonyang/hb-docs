@@ -1,0 +1,15 @@
+{{- define "main" }}
+  <div class="row">
+    <div class="col-xxl-2">
+      {{ partial "hb/modules/docs/nav" . }}
+    </div>
+    <div class="hb-docs-toc col-12 col-xxl-2 text-body-secondary order-xxl-5">
+      {{ partial "hb/modules/docs/toc" . }}
+    </div>
+    <div class="hb-docs-main col-12 col-xxl-8">
+      {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-begin") }}
+      {{ partial "hb/modules/docs/doc" . }}
+      {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-end") }}
+    </div>
+  </div>
+{{- end -}}
