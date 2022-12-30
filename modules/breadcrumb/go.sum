@@ -1,0 +1,10 @@
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20200.20101 h1:wUe8RXjpJYs83CucuWJT7XuqCzQ52f5/N7zlV8woHEg=
+github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20200.20101/go.mod h1:Z5Bhe4pfn8reoHhWqCQMWEAynLCIeBAt1TDwni4fipM=
+github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
+github.com/razonyang/hb-breadcrumb v0.1.0 h1:yZs/kYMOEbzBe0+KQglwv3ebejsQWKz04OWVZmSbGMg=
+github.com/razonyang/hb-breadcrumb v0.1.0/go.mod h1:cuFzgngx22l0FfKo8IVxYvEsKoCskDF+acuhvJn9dR4=
+github.com/razonyang/hb-docs v0.1.0 h1:YU+qfOWxYaD0fzUX5dgBL9Yvx7pMxSrCoDqo4EBdp6o=
+github.com/razonyang/hb-docs v0.1.0/go.mod h1:JFR+I/5UwasdrIwdojrkrbgOpLj5RueyRzH9GHHNmDo=
+github.com/razonyang/hugopress v0.5.0 h1:3cUSiFQvjM9v4mkqVYdApEMLs7yB2B8vQg1ALV54CCw=
+github.com/razonyang/hugopress v0.5.0/go.mod h1:vbHm/Fv59XztrpuCo9TUQwuH4ZWES9zWns7n5GSZn7k=
+github.com/twbs/bootstrap v5.2.1+incompatible/go.mod h1:fZTSrkpSf0/HkL0IIJzvVspTt1r9zuf7XlZau8kpcY0=
