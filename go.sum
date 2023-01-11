@@ -2,5 +2,5 @@ github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000 h1:GZxx4Hc+y
 github.com/gohugoio/hugo-mod-jslibs-dist/popperjs/v2 v2.21100.20000/go.mod h1:mFberT6ZtcchrsDtfvJM7aAH2bDKLdOnruUHl0hlapI=
 github.com/razonyang/hb v0.2.0 h1:iRuE/qC2H4i3scYOvyOSR7KGkIMelBkrmsqv6LSGl2o=
 github.com/razonyang/hb v0.2.0/go.mod h1:X02luEAFN9eoQTNdlef8xbWIw75UBibtde3FyoA8kaM=
-github.com/razonyang/hb-heading-sign v0.1.0 h1:3HOVf5dR7XWdAeop0pSXldrh9SIpLXWroLA9ZzqIAaU=
-github.com/razonyang/hb-heading-sign v0.1.0/go.mod h1:QKxEZwlSy6K1X6ruQThpb4mIv08NMNIFrtSY3zmJYXg=
+github.com/razonyang/hb-heading-sign v0.1.1 h1:6IJs9XB6end12PzGzlzRIT7wXBiJp6a8AuW0TZBbc7I=
+github.com/razonyang/hb-heading-sign v0.1.1/go.mod h1:QKxEZwlSy6K1X6ruQThpb4mIv08NMNIFrtSY3zmJYXg=
