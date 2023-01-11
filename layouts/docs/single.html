@@ -3,13 +3,30 @@
     <div class="col-xxl-2">
       {{ partial "hb/modules/docs/nav" . }}
     </div>
-    <div class="hb-docs-toc col-12 col-xxl-2 text-body-secondary order-xxl-5">
-      {{ partial "hb/modules/docs/toc" . }}
-    </div>
-    <div class="hb-docs-main col-12 col-xxl-8">
-      {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-begin") }}
-      {{ partial "hb/modules/docs/doc" . }}
-      {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-end") }}
+    <div class="hb-docs-main col-xxl-10">
+      <div class="row">
+        <div class="col-12">
+          {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-begin") }}
+        </div>
+        <h1 class="mb-3 col-12">{{ .Title }}</h1>
+        <div class="hb-docs-doc-meta col-12 mb-3 text-body-secondary">
+          {{- partial "hb/modules/docs/doc/meta" . }}
+        </div>
+        <div class="col-12">
+          <div class="row">
+            <div
+              class="hb-docs-toc col-12 col-xxl-2 text-body-secondary order-xxl-5">
+              {{ partial "hb/modules/docs/toc" . }}
+            </div>
+            <div class="col-12 col-xxl-10">
+              {{ partial "hb/modules/docs/doc" . }}
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          {{ partial "hugopress/functions/render-hooks" (dict "Page" . "Name" "hb-docs-main-end ") }}
+        </div>
+      </div>
     </div>
   </div>
 {{- end -}}
