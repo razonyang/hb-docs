@@ -3,7 +3,7 @@
 <div class="hb-docs-doc-content mb-4">
   {{ .Content }}
   {{- if .Pages }}
-    <h2 class="mb-3">In this section</h2>
+    <h2 class="mb-3">{{ i18n "in_this_section" }}</h2>
     <ul class="list-unstyled mb-3">
       {{ template "walk-docs-section-tree" . }}
     </ul>
