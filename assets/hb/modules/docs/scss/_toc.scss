@@ -19,3 +19,9 @@
         }
     }
 }
+
+@include media-breakpoint-up(md) {
+    .hb-docs-doc-toc-collapse {
+        display: block !important;
+    }
+}
