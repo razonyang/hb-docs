@@ -34,13 +34,13 @@
         <div
           class="hb-docs-nav-heading d-flex align-items-center justify-content-between rounded{{ cond $active ` active` `` }}">
           <a
-            class="d-flex align-items-center"
+            class="d-flex flex-grow-1 align-items-center"
             href="{{ $node.Page.RelPermalink }}">
             {{- partial "hb/modules/docs/nav-menu" $node.Page -}}
           </a>
           {{ if .Children }}
             <button
-              class="btn btn-link p-0 text-secondary d-flex align-items-center"
+              class="btn btn-link py-0 px-1 text-secondary d-flex align-items-center"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#{{ $collapseId }}"
