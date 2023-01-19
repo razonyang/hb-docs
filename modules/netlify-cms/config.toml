@@ -1,0 +1,40 @@
+[[module.imports]]
+path = "github.com/razonyang/hb-docs"
+
+[[module.imports]]
+path = "github.com/razonyang/hugo-mod-netlify-cms"
+
+[params.netlify_cms.collections.hb-docs]
+name = "docs"
+label = "Docs"
+label_singular = "Doc"
+description = "Documentation"
+folder = "content/docs"
+extension = "md"
+create = true
+slug = "{{slug}}"
+# sortable_fields = ["nav_weight", "title"]
+i18n = true
+
+[params.netlify_cms.collections.hb-docs.nested]
+depth = 100
+
+[[params.netlify_cms.collections.hb-docs.fields]]
+label = "Title"
+name = "title"
+widget = "string"
+
+[[params.netlify_cms.collections.hb-docs.fields]]
+label = "Publish Date"
+name = "date"
+widget = "datetime"
+
+[[params.netlify_cms.collections.hb-docs.fields]]
+label = "Featured Image"
+name = "thumbnail"
+widget = "image"
+
+[[params.netlify_cms.collections.hb-docs.fields]]
+label = "Body"
+name = "body"
+widget = "markdown"
