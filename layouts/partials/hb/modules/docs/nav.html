@@ -57,7 +57,7 @@
         </div>
         {{- with .Children }}
           <ul
-            class="collapse list-unstyled fw-normal small{{ cond $active ` show` `` }}"
+            class="collapse list-unstyled fw-normal small ms-2{{ cond $active ` show` `` }}"
             id="{{ $collapseId }}">
             {{- template "walk-docs-tree" (dict "Tree" . "Page" $page) }}
           </ul>
